@@ -18,7 +18,7 @@ public class Film {
     @Column(name = "description", nullable = false)
     private String description;
 
-    @OneToMany(targetEntity = Acteur.class)
+    @OneToMany(targetEntity = Acteur.class, cascade = {CascadeType.ALL})
     private List<Acteur> acteurs;
 
     public Film() {
