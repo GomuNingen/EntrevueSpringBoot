@@ -1,10 +1,12 @@
-package com.example.entrevueSpringBoot.controller;
+/**
+ * @author Dominic Tardif
+ */
+package com.example.entrevueSpringBoot.controllers;
 
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@CrossOrigin(origins = "http://localhost:8081")
+// Controller related to the Acteur class (currently not needed for this exercise)
 @RestController
 @RequestMapping("/api")
 public class ActeurController {
